@@ -21,3 +21,11 @@
 .flex-col {
     flex-direction: column;
 }
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.bg-transparent {
+    background-color: transparent;
+}

@@ -1,0 +1,25 @@
+.bg-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.content-over-video {
+    /* position: absolute; */
+    width: 70%;
+}
+
+.header {
+    padding: 0 45px;
+    /* top: 0; */
+}
+
+.hero-content {
+    /* top: 100; */
+}
