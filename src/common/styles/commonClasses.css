@@ -13,8 +13,7 @@
     display: flex;
 }
 
-.absolute-center {
-    justify-content: center;
+.align-center {
     align-items: center;
 }
 
@@ -22,10 +21,23 @@
     flex-direction: column;
 }
 
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
 .justify-between {
     justify-content: space-between;
+    align-items: center;
 }
 
 .bg-transparent {
     background-color: transparent;
+}
+
+.font-white {
+    color: white;
 }
