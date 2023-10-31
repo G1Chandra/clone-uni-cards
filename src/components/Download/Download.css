@@ -1,0 +1,11 @@
+.download-container {
+    background-image: linear-gradient(158deg,#5ad6c4,#fdef78);
+}
+
+.download-content {
+    gap: 100px;
+}
+
+.download-buttons {
+    gap: 50px;
+}
