@@ -8,14 +8,16 @@ const Features = () => {
     {
       img_url: "https://www.uni.cards/images/nx-wave/app_screen_1.webp",
       alt_text: "ss1",
-      heading:
-        "We’ve all heard of instant groceries, now say hello to instant credit.",
-      subheading: "0% hassle, 100% paperless. Get your Uni Card instantly.",
+      heading: `We’ve all heard of instant groceries, now say hello to <span class="uni-gradient-primary">
+        <br> instant credit.
+      </span>`,
+      subheading:
+        "0% hassle, 100% paperless. Get your <br />Uni Card instantly.",
     },
     {
       img_url: "https://www.uni.cards/images/nx-wave/app_screen_2.webp",
       alt_text: "ss2",
-      heading: "With Uni, you’re always in control.",
+      heading: `With Uni, <span class="uni-gradient-primary"><br>you’re always in control.</span>`,
       subheading:
         "Set your own payment limits. Choose how and where you spend. Lock and unlock your card. All right from the app.",
     },
@@ -55,6 +57,9 @@ const Features = () => {
           heading={perk.heading}
           subheading={perk.subheading}
           classes="font-white"
+          imgClasses="features-img-size"
+          headingClasses="heading-classes"
+          subheadingClasses="subheading-classes"
         />
       );
     });

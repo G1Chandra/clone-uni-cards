@@ -1,4 +1,25 @@
 .experience-container {
-    /* background-color: rgba(34,38,39,var(--tw-bg-opacity)); */
     background-color: rgba(34,38,39);
+    padding: 100px;
+}
+
+.experience-heading {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.experience-subheading {
+    font-weight: 500px;
+    font-size: 25px;
+    color: rgba(191,201,204);
+    line-height: 30px;
+    text-align: center;
+}
+
+.experience-img {
+    margin-top: 100px;
+    scale: 120%;
 }

@@ -1,16 +1,16 @@
 import React from "react";
 import "./Footer.css";
+import Button from "../Button/Button";
 
 const Footer = () => {
   return (
     <div className="footer-container">
-      <div className="flex flex-col max-width font-white">
+      <div className="footer-content flex flex-col max-width font-white">
         <svg
-          class="Logo_logo_white__zowGB"
-          viewBox="0 0 85 60"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          //   style="display:block"
+        // class="Logo_logo_white__zowGB"
+        // viewBox="0 0 85 60"
+        // fill="none"
+        // xmlns="http://www.w3.org/2000/svg"
         >
           <path
             fill-rule="evenodd"
@@ -39,6 +39,37 @@ const Footer = () => {
           <br />
           Email: care@uni.club
         </p>
+        <div style={{ borderTop: "1px solid white" }} />
+        <Button classes="btn-grievance">
+          <u>Grievance Redressal Mechanism</u> - SBM Bank India
+        </Button>
+        <div className="spacer-gradient" />
+        <div className="quick-links flex justify-between">
+          <div className="menu-items flex font-white">
+            <Button classes="menu-btn">Instagram</Button>
+            <Button classes="menu-btn">LinkedIn</Button>
+            <Button classes="menu-btn">Twitter</Button>
+            <Button classes="menu-btn">Facebook</Button>
+            <Button classes="menu-btn">Careers</Button>
+          </div>
+          <div className="quick-links flex">
+            <div className="menu-items flex font-white">
+              <div style={{ gap: "10px" }} className="flex">
+                <Button classes="menu-btn">Credit Card KFS</Button>
+                <div>|</div>
+              </div>
+              <div style={{ gap: "10px" }} className="flex">
+                <Button classes="menu-btn">Credit Card T&Cs</Button>
+                <div>|</div>
+              </div>
+              <div style={{ gap: "10px" }} className="flex">
+                <Button classes="menu-btn">Uni T&Cs</Button>
+                <div>|</div>
+              </div>
+              <Button classes="menu-btn">Lending Partner T&Cs</Button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

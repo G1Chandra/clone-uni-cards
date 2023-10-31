@@ -1,3 +1,43 @@
 .footer-container {
+    padding: 50px;
     background-color: black;
+}
+
+.footer-content {
+    color: rgba(141,141,149);
+    font-size: 16px;
+}
+
+.footer-content p {
+    line-height: 25px;
+}
+
+.spacer-gradient {
+    height: 1px;
+    background: linear-gradient(90deg,#00dcc8 26.31%,#00dcc8 61.59%,#fff061 74.32%,#fff061 85.31%);
+    transform: matrix(1,0,0,-1,0,0);
+}
+
+.quick-links {
+    padding: 20px 10px;
+}
+
+.btn-grievance {
+    padding: 20px 0;
+    color: white;
+    background: transparent;
+    border: none;
+    width: fit-content;
+    font-size: 15px;
+}
+
+.menu-items {
+    gap: 15px;
+}
+
+.menu-btn {
+    font-size: 15px;
+    color: white;
+    background: transparent;
+    border: none;
 }

@@ -1,0 +1,22 @@
+.horizontal-card-container {
+    padding: 70px 30px;
+    gap: 75px;
+}
+
+.horizontal-card-text {
+    width: 80%;
+}
+
+.heading {
+    width: 80%;
+    font-weight: bolder;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.subheading {
+    font-weight: 500px;
+    font-size: large;
+    color: rgba(158,167,174);
+    line-height: 30px;
+}

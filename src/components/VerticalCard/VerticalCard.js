@@ -9,13 +9,17 @@ const VerticalCard = ({
   subheadingImgSrc,
 }) => {
   return (
-    <div className="flex flex-col font-white">
-      <img src={imgSrc} alt={altText} />
-      <h1>{heading}</h1>
+    <div className="vertical-card-container flex flex-col font-white">
+      <img className="vertical-card-img" src={imgSrc} alt={altText} />
+      <h2>{heading}</h2>
       {subheading ? (
-        <h3>{subheading}</h3>
+        <div className="vertical-card-subheading">{subheading}</div>
       ) : (
-        <img src={subheadingImgSrc} alt={altText} />
+        <img
+          className="vertical-card-subheading-img"
+          src={subheadingImgSrc}
+          alt={altText}
+        />
       )}
     </div>
   );

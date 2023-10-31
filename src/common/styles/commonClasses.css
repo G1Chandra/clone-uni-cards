@@ -1,13 +1,13 @@
 .max-width {
-    max-width: 70%;
+    max-width: 75%;
     margin: auto;
 }
 
-@media all and (max-width: 767px) {
+/* @media all and (max-width: 767px) {
     .max-width{
         max-width: 90%;
     }
-}
+} */
 
 .flex {
     display: flex;
@@ -40,4 +40,10 @@
 
 .font-white {
     color: white;
+}
+
+.uni-gradient-primary {
+    background: linear-gradient(90deg,#8fffef 25%,#f9f490);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
