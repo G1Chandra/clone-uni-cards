@@ -1,0 +1,11 @@
+.down-arrow {
+    background: linear-gradient(140.86deg, #65ECD8 11.07%, #FDEF78 80.28%);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.faded-font{
+    font-weight: 400!important;
+    color: #9ea7ae;
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import "./HorizontalCard.css";
+import "../HeroSection/HeroSection.css";
 
 const HorizontalCard = ({
   idx,
@@ -15,7 +16,7 @@ const HorizontalCard = ({
         idx % 2 === 0 ? "row-reverse" : ""
       } ${classes}`}
     >
-      <img src={imgSrc} alt={altText} />
+      <img src={imgSrc} alt={altText} className="hero-section-img" />
       <div>
         <h1>{heading}</h1>
         <h3>{subheading}</h3>

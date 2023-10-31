@@ -10,16 +10,15 @@
     z-index: 0;
 }
 
-.content-over-video {
-    /* position: absolute; */
-    width: 70%;
+.overlay {
+    position: absolute;
+    max-width: 70%;
+    top: 0;
+    left: 15%;
+    max-height: 100vh;
 }
 
-.header {
-    padding: 0 45px;
-    /* top: 0; */
-}
-
-.hero-content {
-    /* top: 100; */
+.hero-section-img {
+    width: 420px;
+    height: 420px;
 }

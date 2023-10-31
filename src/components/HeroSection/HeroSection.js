@@ -4,11 +4,17 @@ import "./HeroSection.css";
 const HeroSection = () => {
   return (
     <div className="hero-section-container">
-      <div className="max-width flex flex-col absolute-center">
-        <div className="content-over-video header bg-transparent flex justify-between">
+      <video autoPlay muted loop playsInline className="bg-video">
+        <source
+          src="https://www.uni.cards/videos/nxt_wave_bg.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div className="overlay flex flex-col">
+        <div className="flex justify-between">
           <svg
             class="Logo_logo_white__zowGB"
-            viewBox="0 0 85 60"
+            viewBox="0 0 500 60"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -25,30 +31,72 @@ const HeroSection = () => {
               fill="black"
             ></path>
           </svg>
-          <button>Uni Paychek</button>
+          <button>Uni Paycheck</button>
         </div>
         <div className="content-over-video bg-transparent flex justify-between">
           <div className="flex flex-col absolute-center">
-            <h1>
+            {/* <h1>
               NX Wave. The next-gen credit card for those who love rewards.
+            </h1> */}
+            <h1 style={{ wordWrap: "break-word", maxWidth: "400px" }}>
+              <span>
+                <strong>NX Wave.</strong> The next-gen credit card for those who
+                love rewards.
+              </span>
             </h1>
-            <p>1% Cashback5x RewardsZero Forex Markup</p>
+            <div class="mt-4 md:mt-0">
+              <p class="font-medium text-sm md:text-base md:mb-9">
+                1% Cashback
+                <svg
+                  class="mx-[8px] mb-[2px] inline leading-5"
+                  width="12"
+                  height="12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m6 0 1.273 4.727L12 6 7.273 7.273 6 12 4.727 7.273 0 6l4.727-1.273L6 0Z"
+                    fill="#000"
+                    style={{ mixBlendMode: "darken" }}
+                    // style="mix-blend-mode:darken"
+                  ></path>
+                </svg>
+                5x Rewards
+                <svg
+                  class="mx-[8px] mb-[2px] inline leading-5"
+                  width="12"
+                  height="12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m6 0 1.273 4.727L12 6 7.273 7.273 6 12 4.727 7.273 0 6l4.727-1.273L6 0Z"
+                    fill="#000"
+                    style={{ mixBlendMode: "darken" }}
+                    // style="mix-blend-mode:darken"
+                  ></path>
+                </svg>
+                Zero Forex Markup
+              </p>
+            </div>
+            {/* <p>1% Cashback5x RewardsZero Forex Markup</p> */}
             <div>
               <button>Apply Now</button>
             </div>
           </div>
           <img
+            className="hero-section-img"
             src="https://www.uni.cards/images/nx-wave/nx_wave_hero.png"
             alt="hero-img"
           />
         </div>
+        {/* <video autoPlay muted loop playsInline className="bg-video">
+          <source
+            src="https://www.uni.cards/videos/nxt_wave_bg.mp4"
+            type="video/mp4"
+          />
+        </video> */}
       </div>
-      <video autoPlay muted loop playsInline className="bg-video">
-        <source
-          src="https://www.uni.cards/videos/nxt_wave_bg.mp4"
-          type="video/mp4"
-        />
-      </video>
     </div>
   );
 };
