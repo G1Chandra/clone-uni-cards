@@ -22,4 +22,6 @@
     background: transparent;
     padding: 20px 60px;
     font-size: 18px;
+    display: flex;
+    gap: 10px;
 }
