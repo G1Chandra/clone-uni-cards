@@ -1,5 +1,7 @@
 import React from "react";
 import "./HeroSection.css";
+import MobileForm from "../MobileForm/MobileForm";
+import Button from "../Button/Button";
 
 const HeroSection = () => {
   return (
@@ -31,7 +33,7 @@ const HeroSection = () => {
               fill="black"
             ></path>
           </svg>
-          <button>Uni Paycheck</button>
+          <Button classes="header-button">Uni Paycheck</Button>
         </div>
         <div className="content-over-video bg-transparent flex justify-between">
           <div className="flex flex-col absolute-center">
@@ -80,8 +82,14 @@ const HeroSection = () => {
               </p>
             </div>
             {/* <p>1% Cashback5x RewardsZero Forex Markup</p> */}
-            <div>
-              <button>Apply Now</button>
+            <MobileForm />
+            <div className="consent">
+              <input type="checkbox" id="consent-msg" />
+              <label for="consent-msg" className="consent-label">
+                You agree to be contacted by Uni Cards over Call, SMS, Email
+                <br />
+                or WhatsApp to guide you through your application.
+              </label>
             </div>
           </div>
           <img
@@ -90,12 +98,6 @@ const HeroSection = () => {
             alt="hero-img"
           />
         </div>
-        {/* <video autoPlay muted loop playsInline className="bg-video">
-          <source
-            src="https://www.uni.cards/videos/nxt_wave_bg.mp4"
-            type="video/mp4"
-          />
-        </video> */}
       </div>
     </div>
   );

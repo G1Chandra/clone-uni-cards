@@ -22,3 +22,30 @@
     width: 420px;
     height: 420px;
 }
+
+.header-button {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px 30px;
+    white-space: nowrap;
+    text-align: center;
+    border: none;
+}
+
+.header-button:hover {
+    background-color: black;
+    color: rgb(0, 255, 255);
+}
+
+.consent {
+    display: flex;
+    margin-top: 20px;
+}
+
+.consent-label {
+    cursor: pointer;
+    font-size: 10px;
+    display: flex;
+    position: relative;
+    align-items: center;
+}

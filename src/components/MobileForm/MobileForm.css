@@ -1,0 +1,17 @@
+.mobile-form {
+    background-color: black;
+    padding: 4px 4px;
+    gap: 24px;
+    border-radius: 0.5rem;
+    width: fit-content;
+}
+
+input {
+    background-color: black;
+    border: none;
+}
+
+.form-button {
+    padding: 8px 16px;
+    background-color: rgba(253,239,120);
+}
