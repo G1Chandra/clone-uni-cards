@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./HeroSection.css";
 import MobileForm from "../MobileForm/MobileForm";
 import Button from "../Button/Button";
 
-const HeroSection = () => {
+const HeroSection = ({ isDisabled, onCheckboxClick, onStickyChange }) => {
+  useEffect(() => {
+    const ele = document.getElementById("hero-content");
+    const observer = new IntersectionObserver((entries) => {
+      if (entries.some(({ intersectionRatio }) => intersectionRatio === 0)) {
+        onStickyChange(true);
+      } else {
+        onStickyChange(false);
+      }
+    });
+    observer.observe(ele);
+  }, []);
+
   return (
     <div className="hero-section-container">
       <video autoPlay muted loop playsInline className="bg-video">
@@ -16,9 +28,11 @@ const HeroSection = () => {
         <div className="flex justify-between">
           <svg
             class="Logo_logo_white__zowGB"
-            viewBox="0 0 500 60"
+            viewBox="0 0 90 60"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            width="150"
+            height="80"
           >
             <path
               fill-rule="evenodd"
@@ -35,7 +49,10 @@ const HeroSection = () => {
           </svg>
           <Button classes="header-button">Uni Paycheck</Button>
         </div>
-        <div className="content-over-video bg-transparent flex justify-between">
+        <div
+          id="hero-content"
+          className="content-over-video bg-transparent flex justify-between"
+        >
           <div className="flex flex-col absolute-center">
             {/* <h1>
               NX Wave. The next-gen credit card for those who love rewards.
@@ -82,9 +99,14 @@ const HeroSection = () => {
               </p>
             </div>
             {/* <p>1% Cashback5x RewardsZero Forex Markup</p> */}
-            <MobileForm />
+            <MobileForm isDisabled={isDisabled} />
             <div className="consent">
-              <input type="checkbox" id="consent-msg" />
+              <input
+                type="checkbox"
+                id="consent-msg"
+                onClick={onCheckboxClick}
+                checked={!isDisabled}
+              />
               <label for="consent-msg" className="consent-label">
                 You agree to be contacted by Uni Cards over Call, SMS, Email
                 <br />

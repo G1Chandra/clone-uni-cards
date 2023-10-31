@@ -81,6 +81,11 @@ const Features = () => {
 
   return (
     <div className="features-container">
+      <img
+        style={{ position: "absolute" }}
+        src="https://www.uni.cards/images/circles.png"
+        alt="bg-img"
+      />
       <div className="flex flex-col align-center max-width">
         {displayFeaturesHorizontal()}
         <div className="flex justify-between">{displayFeaturesVertical()}</div>
