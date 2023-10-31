@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/clone-uni-cards/static/css/main.f4b9819e.css",
+    "main.js": "/clone-uni-cards/static/js/main.8f806975.js",
+    "index.html": "/clone-uni-cards/index.html",
+    "main.f4b9819e.css.map": "/clone-uni-cards/static/css/main.f4b9819e.css.map",
+    "main.8f806975.js.map": "/clone-uni-cards/static/js/main.8f806975.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4b9819e.css",
+    "static/js/main.8f806975.js"
+  ]
+}
