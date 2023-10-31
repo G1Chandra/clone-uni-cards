@@ -7,10 +7,12 @@ const Footer = () => {
     <div className="footer-container">
       <div className="footer-content flex flex-col max-width font-white">
         <svg
-        // class="Logo_logo_white__zowGB"
-        // viewBox="0 0 85 60"
-        // fill="none"
-        // xmlns="http://www.w3.org/2000/svg"
+          class="Logo_logo_white__zowGB"
+          width="120"
+          height="80"
+          viewBox="0 0 90 30"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
         >
           <path
             fill-rule="evenodd"
@@ -52,22 +54,20 @@ const Footer = () => {
             <Button classes="menu-btn">Facebook</Button>
             <Button classes="menu-btn">Careers</Button>
           </div>
-          <div className="quick-links flex">
-            <div className="menu-items flex font-white">
-              <div style={{ gap: "10px" }} className="flex">
-                <Button classes="menu-btn">Credit Card KFS</Button>
-                <div>|</div>
-              </div>
-              <div style={{ gap: "10px" }} className="flex">
-                <Button classes="menu-btn">Credit Card T&Cs</Button>
-                <div>|</div>
-              </div>
-              <div style={{ gap: "10px" }} className="flex">
-                <Button classes="menu-btn">Uni T&Cs</Button>
-                <div>|</div>
-              </div>
-              <Button classes="menu-btn">Lending Partner T&Cs</Button>
+          <div className="menu-items flex font-white">
+            <div style={{ gap: "10px" }} className="flex">
+              <Button classes="menu-btn">Credit Card KFS</Button>
+              <div>|</div>
             </div>
+            <div style={{ gap: "10px" }} className="flex">
+              <Button classes="menu-btn">Credit Card T&Cs</Button>
+              <div>|</div>
+            </div>
+            <div style={{ gap: "10px" }} className="flex">
+              <Button classes="menu-btn">Uni T&Cs</Button>
+              <div>|</div>
+            </div>
+            <Button classes="menu-btn">Lending Partner T&Cs</Button>
           </div>
         </div>
       </div>

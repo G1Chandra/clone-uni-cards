@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import HeroSection from "../../components/HeroSection/HeroSection";
 import Perks from "../../components/Perks/Perks";
 import Features from "../../components/Features/Features";
@@ -7,11 +7,27 @@ import Download from "../../components/Download/Download";
 import Compliant from "../../components/Compliant/Compliant";
 import Security from "../../components/Security/Security";
 import Footer from "../../components/Footer/Footer";
+import StickyFooter from "../../components/StickyFooter/StickyFooter";
 
 const HomePage = () => {
+  const [isDisabled, setIsDisabled] = useState(false);
+  const [showStickyFooter, setShowStickyFooter] = useState(false);
+
+  const toggleDisable = () => {
+    setIsDisabled((prev) => !prev);
+  };
+
+  const toggleStickyFooter = (val) => {
+    setShowStickyFooter(val);
+  };
+
   return (
     <>
-      <HeroSection />
+      <HeroSection
+        isDisabled={isDisabled}
+        onCheckboxClick={toggleDisable}
+        onStickyChange={toggleStickyFooter}
+      />
       <Perks />
       <Features />
       <Experience />
@@ -19,6 +35,11 @@ const HomePage = () => {
       <Download />
       <Security />
       <Footer />
+      <StickyFooter
+        isDisabled={isDisabled}
+        onCheckboxClick={toggleDisable}
+        showSticky={showStickyFooter}
+      />
     </>
   );
 };

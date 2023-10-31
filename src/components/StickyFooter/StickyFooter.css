@@ -1,0 +1,21 @@
+.sticky-footer {
+    background-color: rgba(245,245,245);
+    position: fixed;
+    height: 60px;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100vw;
+}
+
+.sticky-footer-container {
+    max-width: 65%;
+    margin: auto;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.opacity-1 {
+    opacity: 1;
+}
