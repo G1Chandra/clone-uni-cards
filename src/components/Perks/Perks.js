@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Perks.css";
 import HorizontalCard from "../HorizontalCard/HorizontalCard";
+import "aos/dist/aos.css";
+import AOS from "aos";
 
 const Perks = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      // easing: "ease-out", // Easing option
+      once: true,
+    });
+  }, []);
+
   const perksData = [
     {
       img_url: "https://www.uni.cards/images/one_percent_cashback.png",
@@ -43,20 +53,30 @@ const Perks = () => {
   return (
     <div className="flex flex-col align-center max-width">
       <div>
-        <p>
+        {/* <p data-aos="fade-up">
           Earn 1% assured cashback <span>on your spends. Get</span> 5X
+        </p> */}
+        <p data-aos="fade-up">
+          Earn 1% assured cashback
+          <span class="faded-font">on your spends. Get</span> 5X
         </p>
-        <p>
-          more value than cashback <span>at the Uni Store. Enjoy</span>
+        <p data-aos="fade-up">
+          more value than cashback{" "}
+          <span class="faded-font">at the Uni Store. Enjoy</span>
         </p>
-        <p>
-          <span>round the clock</span> Whatsapp support. <span>And it's</span>
+        <p data-aos="fade-up">
+          <span class="faded-font">round the clock</span> Whatsapp support.{" "}
+          <span class="faded-font">And it's</span>
         </p>
-        <p>
-          lifetime free<span>; no joining fee, no annual charges.</span>
+        <p data-aos="fade-up">
+          lifetime free
+          <span class="faded-font">; no joining fee, no annual charges.</span>
         </p>
       </div>
-      <div>
+      <div
+        className="down-arrow flex align-center justify-center"
+        data-aos="fade-down"
+      >
         <img
           src="https://www.uni.cards/images/down_arrow.svg"
           alt="down-arrow"
