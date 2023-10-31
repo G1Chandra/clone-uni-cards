@@ -3,6 +3,9 @@ import "./Footer.css";
 import Button from "../Button/Button";
 
 const Footer = () => {
+  const leftArr = ["Instagram", "LinkedIn", "Twitter", "Facebook", "Careers"];
+  const rightArr = ["Credit Card KFS", "Credit Card T&Cs", "Uni T&Cs"];
+
   return (
     <div className="footer-container">
       <div className="footer-content flex flex-col max-width font-white">
@@ -48,25 +51,19 @@ const Footer = () => {
         <div className="spacer-gradient" />
         <div className="quick-links flex justify-between">
           <div className="menu-items flex font-white">
-            <Button classes="menu-btn">Instagram</Button>
-            <Button classes="menu-btn">LinkedIn</Button>
-            <Button classes="menu-btn">Twitter</Button>
-            <Button classes="menu-btn">Facebook</Button>
-            <Button classes="menu-btn">Careers</Button>
+            {leftArr.map((name) => (
+              <Button classes="menu-btn">{name}</Button>
+            ))}
           </div>
           <div className="menu-items flex font-white">
-            <div style={{ gap: "10px" }} className="flex">
-              <Button classes="menu-btn">Credit Card KFS</Button>
-              <div>|</div>
-            </div>
-            <div style={{ gap: "10px" }} className="flex">
-              <Button classes="menu-btn">Credit Card T&Cs</Button>
-              <div>|</div>
-            </div>
-            <div style={{ gap: "10px" }} className="flex">
-              <Button classes="menu-btn">Uni T&Cs</Button>
-              <div>|</div>
-            </div>
+            {rightArr.map((name) => {
+              return (
+                <div style={{ gap: "10px" }} className="flex">
+                  <Button classes="menu-btn">{name}</Button>
+                  <div>|</div>
+                </div>
+              );
+            })}
             <Button classes="menu-btn">Lending Partner T&Cs</Button>
           </div>
         </div>

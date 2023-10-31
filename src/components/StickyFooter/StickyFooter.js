@@ -1,23 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./StickyFooter.css";
 import MobileForm from "../MobileForm/MobileForm";
-import "aos/dist/aos.css";
-import AOS from "aos";
 
 const StickyFooter = ({ isDisabled, onCheckboxClick, showSticky }) => {
-  useEffect(() => {
-    AOS.init({
-      duration: 200, // Animation duration
-      // easing: "ease-out", // Easing option
-      once: false,
-    });
-  }, []);
-
   return (
-    <div
-      data-aos={`${showSticky ? "fade-in" : ""}`}
-      className={`sticky-footer ${showSticky ? "opacity-1" : "opacity-0"}`}
-    >
+    <div className={`sticky-footer ${showSticky ? "opacity-1" : "opacity-0"}`}>
       <div className="sticky-footer-container flex justify-between">
         <MobileForm isDisabled={isDisabled} />
         <div className="consent">

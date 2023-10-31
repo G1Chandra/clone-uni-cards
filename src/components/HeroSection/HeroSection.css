@@ -54,3 +54,17 @@
     position: relative;
     align-items: center;
 }
+
+.hero-content-container {
+    width: 50%;
+    gap: 15px;
+}
+
+.hero-content-header {
+    font-size: 55px;
+    line-height: 50px;
+}
+
+.hero-content-subheading {
+    font-weight: 600;
+}

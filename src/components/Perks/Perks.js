@@ -7,7 +7,7 @@ import AOS from "aos";
 const Perks = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration
+      duration: 1500, // Animation duration
       // easing: "ease-out", // Easing option
       once: true,
     });
@@ -53,19 +53,19 @@ const Perks = () => {
   return (
     <div className="flex flex-col align-center max-width">
       <div className="perks-heading">
-        <p data-aos="fade-up">
+        <p data-aos="fade-up" data-aos-delay="500">
           Earn 1% assured cashback
           <span class="faded-font"> on your spends. Get</span> 5X
         </p>
-        <p data-aos="fade-up">
+        <p data-aos="fade-up" data-aos-delay="700">
           more value than cashback{" "}
           <span class="faded-font">at the Uni Store. Enjoy</span>
         </p>
-        <p data-aos="fade-up">
+        <p data-aos="fade-up" data-aos-delay="900">
           <span class="faded-font">round the clock</span> Whatsapp support.{" "}
           <span class="faded-font">And it's</span>
         </p>
-        <p data-aos="fade-up">
+        <p data-aos="fade-up" data-aos-delay="1100">
           lifetime free
           <span class="faded-font">; no joining fee, no annual charges.</span>
         </p>
@@ -73,6 +73,7 @@ const Perks = () => {
       <div
         className="down-arrow flex align-center justify-center"
         data-aos="fade-down"
+        data-aos-delay="1500"
       >
         <img
           src="https://www.uni.cards/images/down_arrow.svg"

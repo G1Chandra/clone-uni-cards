@@ -53,19 +53,14 @@ const HeroSection = ({ isDisabled, onCheckboxClick, onStickyChange }) => {
           id="hero-content"
           className="content-over-video bg-transparent flex justify-between"
         >
-          <div className="flex flex-col absolute-center">
-            {/* <h1>
-              NX Wave. The next-gen credit card for those who love rewards.
-            </h1> */}
-            <h1 style={{ wordWrap: "break-word", maxWidth: "400px" }}>
-              <span>
-                <strong>NX Wave.</strong> The next-gen credit card for those who
-                love rewards.
-              </span>
-            </h1>
-            <div class="mt-4 md:mt-0">
-              <p class="font-medium text-sm md:text-base md:mb-9">
-                1% Cashback
+          <div className="hero-content-container flex flex-col">
+            <div className="hero-content-header">
+              <strong>NX Wave.</strong> The next-gen credit card for those who
+              love rewards.
+            </div>
+            <div className="hero-content-subheading">
+              <p>
+                1% Cashback{" "}
                 <svg
                   class="mx-[8px] mb-[2px] inline leading-5"
                   width="12"
@@ -79,8 +74,8 @@ const HeroSection = ({ isDisabled, onCheckboxClick, onStickyChange }) => {
                     style={{ mixBlendMode: "darken" }}
                     // style="mix-blend-mode:darken"
                   ></path>
-                </svg>
-                5x Rewards
+                </svg>{" "}
+                5x Rewards{" "}
                 <svg
                   class="mx-[8px] mb-[2px] inline leading-5"
                   width="12"
@@ -94,7 +89,7 @@ const HeroSection = ({ isDisabled, onCheckboxClick, onStickyChange }) => {
                     style={{ mixBlendMode: "darken" }}
                     // style="mix-blend-mode:darken"
                   ></path>
-                </svg>
+                </svg>{" "}
                 Zero Forex Markup
               </p>
             </div>
