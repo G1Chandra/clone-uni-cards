@@ -1,6 +1,5 @@
 import React from "react";
 import "./HorizontalCard.css";
-import "../HeroSection/HeroSection.css";
 
 const HorizontalCard = ({
   idx,
@@ -9,17 +8,24 @@ const HorizontalCard = ({
   heading,
   subheading,
   classes,
+  imgClasses,
+  headingClasses,
+  subheadingClasses,
 }) => {
   return (
     <div
-      className={`flex justify-between ${
+      className={`horizontal-card-container flex justify-between ${
         idx % 2 === 0 ? "row-reverse" : ""
       } ${classes}`}
     >
-      <img src={imgSrc} alt={altText} className="hero-section-img" />
-      <div>
-        <h1>{heading}</h1>
-        <h3>{subheading}</h3>
+      <img src={imgSrc} alt={altText} className={imgClasses} />
+      <div className="horizontal-card-text flex flex-col">
+        <p className={`heading ${headingClasses}`}>
+          <div dangerouslySetInnerHTML={{ __html: heading }} />
+        </p>
+        <p className={`subheading ${subheadingClasses}`}>
+          <div dangerouslySetInnerHTML={{ __html: subheading }} />
+        </p>
       </div>
     </div>
   );

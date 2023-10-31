@@ -1,4 +1,9 @@
 .compliant-container {
     background-color: black;
     text-align: center;
+    padding: 70px 50px;
+    font-weight: 500px;
+    font-size: 25px;
+    color: rgba(191,201,204);
+    line-height: 30px;
 }

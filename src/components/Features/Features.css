@@ -1,3 +1,24 @@
 .features-container {
     background-color: black;
 }
+
+.features-img-size {
+    width: 500px;
+    height: 700px;
+}
+
+.heading-classes {
+    width: 100% !important;
+    font-weight: 500 !important;
+    font-size: 40px !important;
+    line-height: 50px !important;
+    margin-bottom: 0;
+}
+
+.subheading-classes {
+    width: 100% !important;
+    font-weight: 500px !important;
+    font-size: 25px !important;
+    color: rgba(191,201,204) !important;
+    line-height: 30px !important;
+}

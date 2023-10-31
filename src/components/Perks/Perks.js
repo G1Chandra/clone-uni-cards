@@ -17,21 +17,20 @@ const Perks = () => {
     {
       img_url: "https://www.uni.cards/images/one_percent_cashback.png",
       alt_text: "cashback",
-      heading:
-        "1% assured cashback on your spends.The more you spend, the more you earn.",
+      heading: `1% assured cashback on your spends. <span class="faded-font">The more you spend, the more you earn.</span>`,
       subheading:
         "Not applicable on fuel purchase, rent & wallet transfers, ATM withdrawals & international transactions.",
     },
     {
       img_url: "https://www.uni.cards/images/five_x_rewards.png",
       alt_text: "rewards",
-      heading: "5x more value than your cashback, only at the Uni Store.",
+      heading: `5x more value than your cashback, <span class="faded-font">only at the Uni Store.</span>`,
       subheading: "",
     },
     {
       img_url: "https://www.uni.cards/images/forex_globe.png",
       alt_text: "forex",
-      heading: "Zero Forex Markup. Go international, without any fees.",
+      heading: `Zero Forex Markup. <br /><span class="faded-font">Go international, without any fees.</span>`,
       subheading: "",
     },
   ];
@@ -45,6 +44,7 @@ const Perks = () => {
           altText={perk.alt_text}
           heading={perk.heading}
           subheading={perk.subheading}
+          imgClasses="perks-img-size"
         />
       );
     });
@@ -52,13 +52,10 @@ const Perks = () => {
 
   return (
     <div className="flex flex-col align-center max-width">
-      <div>
-        {/* <p data-aos="fade-up">
-          Earn 1% assured cashback <span>on your spends. Get</span> 5X
-        </p> */}
+      <div className="perks-heading">
         <p data-aos="fade-up">
           Earn 1% assured cashback
-          <span class="faded-font">on your spends. Get</span> 5X
+          <span class="faded-font"> on your spends. Get</span> 5X
         </p>
         <p data-aos="fade-up">
           more value than cashback{" "}
@@ -84,11 +81,12 @@ const Perks = () => {
         />
       </div>
       {displayPerks()}
-      <div>
+      <div className="perks-footer">
         <p>
-          Lifetime <span>free.</span> No joining fee.
+          Lifetime <span className="text-green">free.</span> No joining fee.
+          <br />
+          No annual charges.
         </p>
-        <p>No annual charges.</p>
       </div>
     </div>
   );

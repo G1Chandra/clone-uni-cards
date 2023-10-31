@@ -1,5 +1,7 @@
 .security-container {
     /* background-color: rgba(34,38,39,var(--tw-bg-opacity)); */
-    background-color: rgba(34,38,39);
-    gap: 20px;
+    background-color: rgba(34,34,34);
+    color: rgba(141,141,149);
+    gap: 10px;
+    padding: 5px;
 }
