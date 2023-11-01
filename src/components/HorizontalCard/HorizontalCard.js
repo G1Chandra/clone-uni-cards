@@ -18,7 +18,11 @@ const HorizontalCard = ({
         idx % 2 === 0 ? "row-reverse" : ""
       } ${classes}`}
     >
-      <img src={imgSrc} alt={altText} className={imgClasses} />
+      <img
+        src={imgSrc}
+        alt={altText}
+        className={`hor-card-img ${imgClasses}`}
+      />
       <div className="horizontal-card-text flex flex-col">
         <p className={`heading ${headingClasses}`}>
           <div dangerouslySetInnerHTML={{ __html: heading }} />

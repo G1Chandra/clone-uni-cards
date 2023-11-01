@@ -4,7 +4,11 @@ import MobileForm from "../MobileForm/MobileForm";
 
 const StickyFooter = ({ isDisabled, onCheckboxClick, showSticky }) => {
   return (
-    <div className={`sticky-footer ${showSticky ? "opacity-1" : "opacity-0"}`}>
+    <div
+      className={`non-mobile sticky-footer ${
+        showSticky ? "opacity-1" : "opacity-0"
+      }`}
+    >
       <div className="sticky-footer-container flex justify-between">
         <MobileForm isDisabled={isDisabled} />
         <div className="consent">

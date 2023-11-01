@@ -68,3 +68,30 @@
 .hero-content-subheading {
     font-weight: 600;
 }
+
+@media all and (max-width: 768px) {
+    .content-over-video {
+        flex-direction: column-reverse;
+        margin-top: -100px;
+    }
+
+    .hero-section-img {
+        scale: 50%
+    }
+
+    .overlay {
+        gap: 0;
+        max-width: 90%;
+        left: 5%;
+    }
+
+    .hero-content-container {
+        width: 100%;
+    }
+
+    .hero-content-header {
+        margin-top: -80px;
+        font-size: 30px;
+        line-height: 25px;
+    }
+}

@@ -56,10 +56,10 @@ const Features = () => {
           altText={perk.alt_text}
           heading={perk.heading}
           subheading={perk.subheading}
-          classes="font-white"
+          classes="font-white col-rev"
           imgClasses="features-img-size"
-          headingClasses="heading-classes"
-          subheadingClasses="subheading-classes"
+          headingClasses="heading-classes mobile-features-heading"
+          subheadingClasses="subheading-classes mobile-features-subheading"
         />
       );
     });
@@ -82,6 +82,7 @@ const Features = () => {
   return (
     <div className="features-container">
       <img
+        className="non-mobile"
         style={{ position: "absolute" }}
         src="https://www.uni.cards/images/circles.png"
         alt="bg-img"

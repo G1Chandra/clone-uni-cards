@@ -47,7 +47,7 @@ const HeroSection = ({ isDisabled, onCheckboxClick, onStickyChange }) => {
               fill="black"
             ></path>
           </svg>
-          <Button classes="header-button">Uni Paycheck</Button>
+          <Button classes="header-button non-mobile">Uni Paycheck</Button>
         </div>
         <div
           id="hero-content"
@@ -95,7 +95,7 @@ const HeroSection = ({ isDisabled, onCheckboxClick, onStickyChange }) => {
             </div>
             {/* <p>1% Cashback5x RewardsZero Forex Markup</p> */}
             <MobileForm isDisabled={isDisabled} />
-            <div className="consent">
+            <div className="non-mobile consent">
               <input
                 type="checkbox"
                 id="consent-msg"

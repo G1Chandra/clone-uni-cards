@@ -4,7 +4,7 @@ import Button from "../Button/Button";
 
 const MobileForm = ({ isDisabled }) => {
   return (
-    <div className="mobile-form flex">
+    <div className="non-mobile mobile-form flex">
       <input placeholder="Enter Phone Number" />
       <Button
         disabled={isDisabled}

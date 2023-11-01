@@ -3,11 +3,22 @@
     margin: auto;
 }
 
-/* @media all and (max-width: 767px) {
-    .max-width{
+@media all and (max-width: 768px) {
+    .max-width {
         max-width: 90%;
+        margin: auto;
     }
-} */
+
+    .non-mobile {
+        display: none !important;
+    }
+}
+
+@media all and (min-width: 767px) {
+    .only-mobile {
+        display: none !important;
+    }
+}
 
 .flex {
     display: flex;

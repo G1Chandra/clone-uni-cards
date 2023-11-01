@@ -22,3 +22,15 @@
     color: rgba(191,201,204) !important;
     line-height: 30px !important;
 }
+
+@media all and (max-width: 768px) {
+    .heading-classes {
+        font-size: 22px !important;
+        line-height: 25px !important;
+    }
+
+    .subheading-classes {
+        font-size: 13px !important;
+        line-height: 20px !important;
+    }
+}
