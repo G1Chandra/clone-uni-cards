@@ -8,6 +8,7 @@ import Compliant from "../../components/Compliant/Compliant";
 import Security from "../../components/Security/Security";
 import Footer from "../../components/Footer/Footer";
 import StickyFooter from "../../components/StickyFooter/StickyFooter";
+import StickyButton from "../../components/StickyButton/StickyButton";
 
 const HomePage = () => {
   const [isDisabled, setIsDisabled] = useState(false);
@@ -40,6 +41,7 @@ const HomePage = () => {
         onCheckboxClick={toggleDisable}
         showSticky={showStickyFooter}
       />
+      <StickyButton />
     </>
   );
 };

@@ -94,4 +94,9 @@
         font-size: 30px;
         line-height: 25px;
     }
+
+    .menulist-btn {
+        scale: 300%;
+        margin-right: 20px;
+    }
 }
