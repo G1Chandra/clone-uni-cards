@@ -23,3 +23,24 @@
     margin-top: 100px;
     scale: 120%;
 }
+
+@media all and (max-width: 768px) {
+    .experience-container {
+        padding: 10px 20px;
+    }
+
+    .experience-heading {
+        text-align: left;
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .experience-subheading {
+        text-align: left;
+    }
+
+    .experience-img {
+        scale: 75%;
+        margin: 40px 0;
+    }
+}

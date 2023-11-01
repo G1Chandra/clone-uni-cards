@@ -43,3 +43,38 @@
     background: transparent;
     border: none;
 }
+
+@media all and (max-width: 768px) {
+    .footer-container {
+        max-width: 100% !important;
+        padding: 15px 5px;
+    }
+
+    .footer-content p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .btn-grievance {
+        text-align: left;
+        line-height: 25px;
+    }
+
+    .quick-links {
+        flex-direction: column !important;
+        gap: 20px;
+    }
+
+    .menu-items {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footer-final {
+        gap: 3px;
+    }
+
+    .footer-final-btn {
+        padding-right: 3px;
+    }
+}

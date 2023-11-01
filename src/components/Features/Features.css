@@ -33,4 +33,9 @@
         font-size: 13px !important;
         line-height: 20px !important;
     }
+
+    .vert-cards {
+        padding-top: 125px;
+        flex-direction: column;
+    }
 }

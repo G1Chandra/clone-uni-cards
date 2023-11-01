@@ -55,16 +55,18 @@ const Footer = () => {
               <Button classes="menu-btn">{name}</Button>
             ))}
           </div>
-          <div className="menu-items flex font-white">
+          <div className="footer-final menu-items flex font-white">
             {rightArr.map((name) => {
               return (
-                <div style={{ gap: "10px" }} className="flex">
-                  <Button classes="menu-btn">{name}</Button>
+                <div style={{ gap: "0" }} className="flex">
+                  <Button classes="footer-final-btn menu-btn">{name}</Button>
                   <div>|</div>
                 </div>
               );
             })}
-            <Button classes="menu-btn">Lending Partner T&Cs</Button>
+            <Button classes="footer-final-btn menu-btn">
+              Lending Partner T&Cs
+            </Button>
           </div>
         </div>
       </div>

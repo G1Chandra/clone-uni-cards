@@ -66,9 +66,10 @@ const Features = () => {
   };
 
   const displayFeaturesVertical = () => {
-    return verticalFeaturesData.map((perk) => {
+    return verticalFeaturesData.map((perk, idx) => {
       return (
         <VerticalCard
+          index={idx}
           imgSrc={perk.img_url}
           altText={perk.alt_text}
           heading={perk.heading}
@@ -89,7 +90,9 @@ const Features = () => {
       />
       <div className="flex flex-col align-center max-width">
         {displayFeaturesHorizontal()}
-        <div className="flex justify-between">{displayFeaturesVertical()}</div>
+        <div className="vert-cards flex justify-between">
+          {displayFeaturesVertical()}
+        </div>
       </div>
     </div>
   );

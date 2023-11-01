@@ -1,5 +1,6 @@
 .vertical-card-container {
     padding: 100px 50px;
+    flex-direction: column;
 }
 
 .vertical-card-img {
@@ -20,5 +21,30 @@
 }
 
 @media all and (max-width: 768px) {
-    
+    .row-rev {
+        flex-direction: row-reverse !important;
+    }
+
+    .row {
+        flex-direction: row !important;
+    }
+
+    .vertical-card-container {
+        padding: 20px 0;
+        gap: 20px;
+    }
+
+    .vertical-card-img {
+        scale: 80%;
+        margin: auto;
+    }
+
+    .vertical-card-heading {
+        font-size: 15px;
+    }
+
+    .vertical-card-subheading {
+        font-size: 14px;
+        line-height: 15px;
+    }
 }
